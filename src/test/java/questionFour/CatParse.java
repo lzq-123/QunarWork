@@ -1,4 +1,4 @@
-package QuestionFour;
+package questionFour;
 
 import org.apache.commons.io.FileUtils;
 

@@ -1,3 +1,4 @@
+package questionFive.socketImpl;
 
 import java.io.*;
 import java.net.Socket;
@@ -8,6 +9,9 @@ public class QuestionFive {
     public static void main(String[] args) throws IOException {
         String serverName = "localhost";
         int port = Integer.parseInt("6666");
+
+        MyServerSocket myServerSocket = new MyServerSocket(port);
+        myServerSocket.start();
 
         try {
             Socket client = new Socket(serverName, port);
